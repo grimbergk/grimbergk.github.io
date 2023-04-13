@@ -1,151 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Email</title>
-	<style>
-		.main-heading {
-			font-weight: bold;
-			font-size: 24px;
-			margin-bottom: 10px;
-		}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Korey Grimberg">
+        <title>Awesome science application correspondance</title>
+        <style>
+            html {
+                font-size: 16px;
+            }
+            body {
+                max-width: 800;
+                margin: 0 auto;
+            }
+            .sender-column {
+                text-align: right;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            p,ul,ol,dl,address {
+                line-height: 1.5;
+            }
+            p, li, dd, dt, address {
+                line-height: 1.5;
+            }
+            address {
+                font-style: normal;
+                margin:1rem 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="address" style="text-align: right;">
+            <p><b>Dr. Eleanor Gaye</b><br>
+            Awesome Science faculty<br>
+            University of Awesome<br>
+            Bobtown, CA 99999, USA<br>
+            <b>Tel:</b> 123-456-7890<br>
+            <b>Email:</b> no_reply@example.com</p>
+          </div>
+<div style="text-align: right;"
+<p>20 January 2016</p>
+    </div>
 
-		.address {
-			margin-bottom: 20px;
-		}
+    <div class="address" style="text-align: left;">
+        <p><b>Miss Eileen Dover</b><br>
+        4321 Cliff Top Edge<br>
+        Dover, CT9 XXX<br>
+        UK</p>
+      </div>
 
-		.left-align {
-			text-align: left;
-		}
-
-		.right-align {
-			text-align: right;
-		}
-	</style>
-</head>
-<body>
-	<div class="address right-align">
-		<p><b>Dr. Eleanor Gaye</b><br>
-		Awesome Science faculty<br>
-		University of Awesome<br>
-		Bobtown, CA 99999, USA<br>
-		<b>Tel:</b> 123-456-7890<br>
-		<b>Email:</b> no_reply@example.com</p>
-	</div>
-
-	<div class="right-align">
-		<p class="main-heading">Re: Eileen Dover university application</p>
-	</div>
-
-	<div class="address left-align">
-		<p><b>Miss Eileen Dover</b><br>
-		4321 Cliff Top Edge<br>
-		Dover, CT9 XXX<br>
-		UK</p>
-	</div>
-
-	<div class="left-align">
-		<p>20 January 2016</p>
-	</div>
+<div class="left-align">
+    <p class="main-heading">Re: Eileen Dover university application</p>
+  </div>
 </body>
 </html>
-I hope this code works as expected.
 
-
-
-
-neverstriketwice@gmail.com
-the heading 1 is suppose to be AFTER the "miss eileen over" alignment code
-My apologies for the mistake. Here's the corrected code, with the heading 1 tag after the Miss Eileen Dover address:
-
-php
-Copy code
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>University Application</title>
-  </head>
-  <body>
-    <h1 style="font-size: 24px; font-weight: bold;">Re: Eileen Dover university application</h1>
-    <div class="address" style="text-align: right;">
-      <p><b>Dr. Eleanor Gaye</b><br>
-      Awesome Science faculty<br>
-      University of Awesome<br>
-      Bobtown, CA 99999, USA<br>
-      <b>Tel:</b> 123-456-7890<br>
-      <b>Email:</b> no_reply@example.com</p>
-    </div>
-    <div style="text-align: right;">
-      <p>20 January 2016</p>
-    </div>
-    <div class="address" style="text-align: left;">
-      <p><b>Miss Eileen Dover</b><br>
-      4321 Cliff Top Edge<br>
-      Dover, CT9 XXX<br>
-      UK</p>
-    </div> 
-  </body>
-</html>
-I hope this one works correctly for you!
-
-
-
-
-neverstriketwice@gmail.com
-where is the heading code? <div class="right-align">
-		<p class="main-heading">Re: Eileen Dover university application</p>
-	</div>
-suppose to be below the eileen over part
-I apologize for the mistake in my previous response. Here's the correct code with the heading placed after the "Miss Eileen Dover" alignment code:
-
-php
-Copy code
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Email</title>
-    <style>
-      .address {
-        margin-top: 2em;
-        margin-bottom: 2em;
-      }
-      .right-align {
-        text-align: right;
-      }
-      .left-align {
-        text-align: left;
-      }
-      .main-heading {
-        font-size: 24px;
-        font-weight: bold;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="address right-align">
-      <p><b>Dr. Eleanor Gaye</b><br>
-      Awesome Science faculty<br>
-      University of Awesome<br>
-      Bobtown, CA 99999, USA<br>
-      <b>Tel:</b> 123-456-7890<br>
-      <b>Email:</b> no_reply@example.com</p>
-    </div>
-    <div class="left-align">
-      <p><b>Miss Eileen Dover</b><br>
-      4321 Cliff Top Edge<br>
-      Dover, CT9 XXX<br>
-      UK</p>
-    </div>
-    <div class="left-align">
-      <p class="main-heading">Re: Eileen Dover university application</p>
-    </div>
-    <p>Dear Sir/Madam,</p>
-    <p>I am writing to you to express my strong interest in applying for the Bachelor's program in Computer Science at the University of Awesome for the fall of 2023.</p>
-    <p>I have completed my high school education from XYZ school, and I have always been passionate about computers and technology. Pursuing a degree in Computer Science has been a dream of mine for a long time, and I believe that the University of Awesome is the perfect place to make that dream a reality.</p>
-    <p>Thank you for considering my application. I look forward to hearing back from you soon.</p>
-    <p>Sincerely,</p>
-    <p>Eileen Dover</p>
-  </body>
-</html>
 Dear Eileen,
 
 Thank you for your recent application to join us at the University of Awesome's science faculty to study as part of your PhD next year. I will answer your questions one by one, in the following sections.
