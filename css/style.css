@@ -70,10 +70,7 @@ nav {
       width:14rem;
       border:.0625rem solid #333;
       background-color:#8FB0D0;
-      position:static;
-      top: 0;
-      width: 100%;
-      z-index: 1;
+      position:fixed;
 }
 
 nav img {
