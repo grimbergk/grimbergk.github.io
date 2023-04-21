@@ -64,7 +64,7 @@ blockquote {
 
 nav {
       float:left;
-      display: flex;
+      display: fixed;
       flex-wrap:wrap;
       flex-direction: column;
       width:14rem;
@@ -92,8 +92,8 @@ nav p a {
     color:#B1BED3;
 }
 
-nav p a:hover,
-figcaption a:hover {
+nav p a:not(:hover),
+figcaption a:not(:hover) {
     color:#495F83;
     text-decoration:none;
 }
@@ -119,7 +119,7 @@ nav :nth-child(2) {
     margin-top:0;
 }
 
-nav a:hover {
+nav a:not(:hover) {
   color:#FFF;
     background-color:#333;
 }
