@@ -11,7 +11,7 @@ html {
 
 body {
     max-width:1200px;
-    margin:0 auto;
+    margin-top:100;
     padding:1rem 2rem;    
     color:#111;
     font-family: 'Roboto Condensed', sans-serif;
