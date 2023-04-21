@@ -71,6 +71,9 @@ nav {
       border:.0625rem solid #333;
       background-color:#8FB0D0;
       position:fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
 }
 
 nav img {
