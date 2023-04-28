@@ -18,13 +18,6 @@ body {
        
 } 
 
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-  }
-
 header {
     border-bottom: .0625rem solid #333;
     margin-bottom:4rem;
