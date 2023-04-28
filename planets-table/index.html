@@ -9,39 +9,25 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <h1>Planets Table</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Planet Name</th>
-              <th>Planet Type</th>
-              <th>Number of Moons</th>
-              <th>Distance from Sun (AU)</th>
-              <th>Length of Year (Earth Days)</th>
-              <th>Mean Temperature (Celsius)</th>
-              <th>Discoverer</th>
-              <th>Year of Discovery</th>
-            </tr>
-          </thead>
-          <tbody id="planet-data">
-          </tbody>
-        </table>
-        <script>
-          fetch('planets_data.txt')
-            .then(response => response.text())
-            .then(data => {
-              const rows = data.split('\n').map(row => row.split('\t'))
-              const tbody = document.getElementById('planet-data')
-              rows.forEach(row => {
-                const tr = document.createElement('tr')
-                row.forEach(cell => {
-                  const td = document.createElement('td')
-                  td.innerText = cell
-                  tr.appendChild(td)
-                })
-                tbody.appendChild(tr)
-              })
-            })
-        </script>
-      </body>
-    </html>
+
+        <!-- Wrap the top-level heading in a header element -->
+        
+            <h1>Planets Data</h1>
+        
+        <!-- Add a main element to contain the table -->
+            
+            <!-- Add the table element. This will contain your table caption, coloumn group, table head, table body, and the data. -->
+                
+                <!-- The caption element should be the first child of the table element, and wrap the following text and link.-->
+        
+                Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+        
+                <!-- The second child of the table element should be the colgroup element, which also contains several col elements, and helps define the purpose of the table colums. -->
+                    
+                <!-- The table head element should be the third child of the table element; it will wrap the code and content to define a row of column headers. -->    
+                
+                <!-- The fourth child of the table element should be the table body element, which will contain the code and content to display rows of data. -->
+                    
+                <!-- Please note that you do NOT need to add a table footer for this assignment. -->
+    </body>
+</html>
