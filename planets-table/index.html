@@ -9,25 +9,39 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-
-        <!-- Wrap the top-level heading in a header element -->
-        
-            <h1>Planets Data</h1>
-        
-        <!-- Add a main element to contain the table -->
-            
-            <!-- Add the table element. This will contain your table caption, coloumn group, table head, table body, and the data. -->
-                
-                <!-- The caption element should be the first child of the table element, and wrap the following text and link.-->
-        
-                Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
-        
-                <!-- The second child of the table element should be the colgroup element, which also contains several col elements, and helps define the purpose of the table colums. -->
-                    
-                <!-- The table head element should be the third child of the table element; it will wrap the code and content to define a row of column headers. -->    
-                
-                <!-- The fourth child of the table element should be the table body element, which will contain the code and content to display rows of data. -->
-                    
-                <!-- Please note that you do NOT need to add a table footer for this assignment. -->
-    </body>
-</html>
+        <h1>Planets Table</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Planet Name</th>
+              <th>Distance from Sun</th>
+              <th>Number of Moons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- table rows go here -->
+            <script>
+              fetch("planets_data.txt")
+                .then(response => response.text())
+                .then(text => {
+                  const data = text.split("\n").filter(row => row.trim() !== "");
+                  data.forEach(row => {
+                    const [planet, distance, moons] = row.split(",");
+                    const tr = document.createElement("tr");
+                    const nameTd = document.createElement("td");
+                    const distanceTd = document.createElement("td");
+                    const moonsTd = document.createElement("td");
+                    nameTd.innerText = planet;
+                    distanceTd.innerText = distance;
+                    moonsTd.innerText = moons;
+                    tr.appendChild(nameTd);
+                    tr.appendChild(distanceTd);
+                    tr.appendChild(moonsTd);
+                    document.querySelector("tbody").appendChild(tr);
+                  });
+                });
+            </script>
+          </tbody>
+        </table>
+      </body>
+    </html>
