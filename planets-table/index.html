@@ -14,34 +14,34 @@
           <thead>
             <tr>
               <th>Planet Name</th>
-              <th>Distance from Sun</th>
+              <th>Planet Type</th>
               <th>Number of Moons</th>
+              <th>Distance from Sun (AU)</th>
+              <th>Length of Year (Earth Days)</th>
+              <th>Mean Temperature (Celsius)</th>
+              <th>Discoverer</th>
+              <th>Year of Discovery</th>
             </tr>
           </thead>
-          <tbody>
-            <!-- table rows go here -->
-            <script>
-              fetch("planets_data.txt")
-                .then(response => response.text())
-                .then(text => {
-                  const data = text.split("\n").filter(row => row.trim() !== "");
-                  data.forEach(row => {
-                    const [planet, distance, moons] = row.split(",");
-                    const tr = document.createElement("tr");
-                    const nameTd = document.createElement("td");
-                    const distanceTd = document.createElement("td");
-                    const moonsTd = document.createElement("td");
-                    nameTd.innerText = planet;
-                    distanceTd.innerText = distance;
-                    moonsTd.innerText = moons;
-                    tr.appendChild(nameTd);
-                    tr.appendChild(distanceTd);
-                    tr.appendChild(moonsTd);
-                    document.querySelector("tbody").appendChild(tr);
-                  });
-                });
-            </script>
+          <tbody id="planet-data">
           </tbody>
         </table>
+        <script>
+          fetch('planets_data.txt')
+            .then(response => response.text())
+            .then(data => {
+              const rows = data.split('\n').map(row => row.split('\t'))
+              const tbody = document.getElementById('planet-data')
+              rows.forEach(row => {
+                const tr = document.createElement('tr')
+                row.forEach(cell => {
+                  const td = document.createElement('td')
+                  td.innerText = cell
+                  tr.appendChild(td)
+                })
+                tbody.appendChild(tr)
+              })
+            })
+        </script>
       </body>
     </html>
