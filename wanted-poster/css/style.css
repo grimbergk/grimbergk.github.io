@@ -1,4 +1,8 @@
 /* Headings */
+@font-face {
+    font-family: 'Alfa Slab One';
+    src: url('https://github.com/grimbergk/grimbergk.github.io/raw/67a5383989d33669fe94c77b2a9e3fb874b4618b/wanted-poster/fonts/alfa-slab-one-regular.ttf');
+}
 
 h1 {
     text-transform: uppercase;
