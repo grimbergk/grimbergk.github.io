@@ -74,18 +74,16 @@ p {
 
 figure {
     margin-bottom: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    text-align: center;
+}
 
 figcaption {
     padding-top: 8px;
-    text-align: right;
+    text-align: center;
 }
 
 img {
-    width: 100%;
+    display: block;
     margin: 0 auto;
     max-width: 800px;
 }
