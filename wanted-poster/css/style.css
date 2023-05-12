@@ -1,4 +1,13 @@
 /* Headings */
+@font-face {
+    font-family: 'Alfa Slab One';
+    src: url('path/to/alfa-slab-one-regular.ttf');
+}
+
+h1 {
+    font-family: 'Alfa Slab One', sans-serif;
+}
+
 
 h2, h3, h4 {
     text-transform: uppercase;
