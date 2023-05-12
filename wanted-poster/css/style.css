@@ -81,7 +81,10 @@ figure {
 figcaption {
     padding-top: 8px;
     text-align: right;
-    font-family: 'Lato', Arial, serif;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 img {
