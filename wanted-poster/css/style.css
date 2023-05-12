@@ -23,6 +23,7 @@ h2 {
     letter-spacing: 4px;
     font-weight: normal;
     text-shadow: 0.09375rem 0.09375rem 0.09375rem #000;
+    text-align: center;
 }
 
 h3 {
@@ -30,6 +31,7 @@ h3 {
     font-weight: normal;
     text-shadow: none;
     color: black;
+    text-align: center;
 }
 
 h4 {
@@ -37,6 +39,7 @@ h4 {
     letter-spacing: 4px;
     font-weight: normal;
     padding-bottom: 18px;
+    text-align: center;
 }
 
 h5 {
@@ -45,7 +48,7 @@ h5 {
     padding: 8px;
     background-color: #333;
     color: #FFF;
-    font-family: 'Lato', Arial, sans-serif;
+    font-family: 'Lato', Arial, serif;
     font-weight: normal;
     text-align: center;
 }
