@@ -1,4 +1,10 @@
 /* Headings */
+body {
+    background-image: url('https://github.com/grimbergk/grimbergk.github.io/blob/67b7d4c03ea4ef172fc91fe0cd76f20f8235f9c4/wanted-poster/images/wrinkled-white-paper-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 h1 {
     text-transform: uppercase;
