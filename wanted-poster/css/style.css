@@ -67,6 +67,7 @@ p {
     padding: 0 16px;
     width: 90%;
     text-align: left;
+    font-family: 'Lato', Arial, serif;
 }
 
 
@@ -80,6 +81,7 @@ figure {
 figcaption {
     padding-top: 8px;
     text-align: right;
+    font-family: 'Lato', Arial, serif;
 }
 
 img {
@@ -94,4 +96,5 @@ img {
 footer {
     padding: 16px;
     border-top: 32px solid #333;
+    font-family: 'Lato', Arial, serif;
 }
