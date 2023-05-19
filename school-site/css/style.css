@@ -110,13 +110,21 @@ figcaption {
     margin-bottom: 32px;
 }
 
+a {
+    outline: none;
+    color: #33658A;
+    text-decoration: none;
+}
 
-/* Link Styling */
+a:visited {
+    color: #33658A;
+}
 
-
-
-
-
+a:focus,
+a:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
 
 /* List Styling */
 
