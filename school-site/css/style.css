@@ -86,22 +86,26 @@ h1, h2 {
 }
 
 h1 {
+    text-transform: uppercase;
     font-size: 60px;
     margin: 18px 0;
+    letter-spacing: 2px;
+    font-family: 'Josefin Slab', serif;
     text-align: center;
 }
 
 h2 {
     font-size: 24px;
+    font-family: 'Josefin Slab', serif;
 }
 
-p, li {
+p, ul, ol {
     font-size: 12px;
     letter-spacing: 0.5px;
     word-spacing: 2px;
 }
 
-h2 + p {
+section h2 + p {
     text-indent: 24px;
 }
 
@@ -111,7 +115,6 @@ figcaption {
 }
 
 a {
-    outline: none;
     color: #33658A;
     text-decoration: none;
 }
@@ -120,10 +123,11 @@ a:visited {
     color: #33658A;
 }
 
-a:focus,
-a:hover {
+a:focus, a:hover {
     text-decoration: none;
-    border-bottom: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
 }
 
 /* List Styling */
