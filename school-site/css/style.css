@@ -175,4 +175,11 @@ nav a:active {
     background-color: #000;
 }
 
-/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+footer p {
+    margin: 0;
+}
