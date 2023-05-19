@@ -130,12 +130,24 @@ a:focus, a:hover {
     color: inherit;
 }
 
-/* List Styling */
-
-
-
-
-
+ul, ol {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  ol {
+    list-style-type: lower-alpha;
+  }
+  
+  .long-list a:hover {
+    text-transform: uppercase;
+  }
 
 /* Navigation Menu */
 
