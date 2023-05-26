@@ -133,6 +133,32 @@ aside {
   padding: 20px;
 }
 
+aside h3 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+aside p {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+aside .subscribe-button {
+  background-color: #1c1c89;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
 /* Footer styles */
 footer {
   text-align: center;
