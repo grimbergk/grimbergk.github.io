@@ -126,9 +126,9 @@ aside {
 
 /* Footer styles */
 footer {
-  text-align: center;
+  text-align: left;
   background-color: #333;
-  color: #fff;
+  color: #000000;
   padding: 20px;
 }
 
