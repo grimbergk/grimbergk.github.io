@@ -67,12 +67,15 @@ body {
 /* Header styles */
 
 h1 {
-  color: #202094;
-  font-weight: bold;
+  font-family: 'Josefin Slab', serif;
+  color: darkblue;
   text-shadow: 0.09375rem 0.009375rem 0.09375rem #000;
-  font-family: 'Alfa Slab One', Garamond, serif;
-  text-align: center;
+  font-weight: bold;
+  font-style: italic;
   transform: rotate(195deg);
+  text-align: center;
+  margin: 0;
+  padding: 10px;
 }
 
 header {
