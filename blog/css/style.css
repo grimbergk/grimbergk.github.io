@@ -118,6 +118,13 @@ main {
   background-color: #fff;
   padding: 20px;
 }
+p {
+  margin: 16px auto;
+  padding: 0 16px;
+  width: 90%;
+  text-align: left;
+  font-family: 'Lato', Arial, serif;
+}
 
 /* Sidebar styles */
 aside {
