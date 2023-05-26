@@ -71,8 +71,7 @@ h1 {
   color: darkblue;
   text-shadow: 0.09375rem 0.009375rem 0.09375rem #000;
   font-weight: bold;
-  font-style: italic;
-  transform: rotate(-15deg);
+  transform: rotate(15deg);
   text-align: center;
   margin: 0;
   padding: 10px;
@@ -112,7 +111,7 @@ nav a {
 }
 
 nav ul li:nth-child(2) a {
-  transform: rotate(-5deg);
+  transform: rotate(35deg);
   text-decoration: line-through;
 }
 
