@@ -49,6 +49,7 @@
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
 /* Set general styles */
+
 body {
     margin: 0;
     padding: 0;
@@ -70,7 +71,7 @@ body {
   }
   
   nav {
-    margin-left: auto;
+    margin-right: auto;
   }
   
   nav ul {
@@ -138,3 +139,4 @@ body {
   .right-footer {
     float: right;
   }
+  
