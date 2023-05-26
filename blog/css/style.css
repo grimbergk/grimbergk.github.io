@@ -65,6 +65,15 @@ body {
 }
 
 /* Header styles */
+
+h1 {
+  font-family: 'Josefin Slab', sans-serif;
+  color: #202094;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: rotate(-15deg);
+}
+
 header {
   background-color: #333;
   color: #fff;
@@ -131,6 +140,20 @@ footer {
 
 .right-footer {
   float: right;
+}
+
+.subscribe-button {
+  background-color: #204264;
+  color: #fff;
+  font-family: "Josefin Slab", serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #238eeb;
 }
 
   
