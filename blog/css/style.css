@@ -111,6 +111,11 @@ nav a {
   color: #fff;
 }
 
+nav ul li:nth-child(2) a {
+  transform: rotate(-5deg);
+  text-decoration: line-through;
+}
+
 /* Main section styles */
 main {
   display: flex;
