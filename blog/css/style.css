@@ -65,37 +65,19 @@ body {
 }
 
 /* Header styles */
-
-h1 {
-  font-family: 'Josefin Slab', sans-serif;
-  color: #202094;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  transform: rotate(-15deg);
-}
-
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
-
-.header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.logo {
-  font-family: "Josefin Slab", serif;
-  font-size: 24px;
+nav {
+  margin-left: auto;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 nav li {
@@ -104,60 +86,43 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 /* Main section styles */
 main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.main-body {
-  flex: 1 1 70%;
+section {
+  flex: 1 1 60%;
+  margin-bottom: 30px;
+}
+
+/* Article styles */
+article {
   background-color: #fff;
   padding: 20px;
 }
-p {
-  margin: 16px auto;
-  padding: 0 16px;
-  width: 90%;
-  text-align: left;
-  font-family: 'Lato', Arial, serif;
+
+.article-image {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.article-image img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
 }
 
 /* Sidebar styles */
 aside {
   flex: 1 1 30%;
-  background-color: #f5f5f5;
-  padding: 20px;
 }
-
-aside h3 {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-aside p {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  line-height: 1.5;
-}
-
-aside .subscribe-button {
-  background-color: #1c1c89;
-  color: #FFFFFF;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-family: 'Arial', sans-serif;
-  font-size: 32px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 
 /* Footer styles */
 footer {
@@ -175,18 +140,23 @@ footer {
   float: right;
 }
 
-.subscribe-button {
-  background-color: #204264;
-  color: #fff;
-  font-family: "Josefin Slab", serif;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+/* Custom styles */
+h1 {
+  font-family: "Josefin Slab", sans-serif;
+  color: #1c1c75;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000;
+  transform: rotate(195deg);
 }
 
-.subscribe-button:hover {
-  background-color: #238eeb;
+.subscribe-button {
+  background-color: #1c1c75;
+  color: #fff;
+  font-family: "Josefin Slab", sans-serif;
+}
+
+aside h3 {
+  font-family: "Josefin Slab", sans-serif;
 }
 
   
